@@ -27,7 +27,7 @@ The project supports dynamic index updating through `inotifywait` recursively on
 git clone git@github.com:lekanovic/docker-opengrok.git
 cd docker-opengrok
 sudo docker build -t lekanovic/opengrok .
-sudo docker run -v /home/radovan/projects/git-1.9.1:/src -v /home/radovan/projects/index/:/reindex -p 9090:8080 lekanovic/radovan
+sudo docker run -v /home/radovan/projects/git-1.9.1:/src -v /home/radovan/projects/index:/reindex -p 9090:8080 lekanovic/opengrok
 ```
 ## Radde, push image to docker hub
 ```
