@@ -25,5 +25,5 @@ The project supports dynamic index updating through `inotifywait` recursively on
 ## Radde, build and run docker
 ```
 sudo docker build -t lekanovic/radovan .
- docker run -v /home/radovan/projects/git-1.9.1:/src -v /home/radovan/projects/index/:/reindex -p 9090:8080 lekanovic/radovan
+sudo docker run -v /home/radovan/projects/git-1.9.1:/src -v /home/radovan/projects/index/:/reindex -p 9090:8080 lekanovic/radovan
 ```
