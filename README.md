@@ -21,3 +21,9 @@ that, the search engine is available at `http://host:[public port]/source/`.
 ## Note
 
 The project supports dynamic index updating through `inotifywait` recursively on the source folder. However, `touch` doesn't help. You should add or delete or modify the content of some source file to make it happen.
+
+## Radde, build and run docker
+```
+sudo docker build -t lekanovic/radovan .
+sudo docker run -d -v /home/radovan/projects/git-1.9.1:/src -p 9090:8080 lekanovic/radovan
+```
