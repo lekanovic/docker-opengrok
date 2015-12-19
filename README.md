@@ -22,7 +22,7 @@ that, the search engine is available at `http://host:[public port]/source/`.
 
 The project supports dynamic index updating through `inotifywait` recursively on the source folder. However, `touch` doesn't help. You should add or delete or modify the content of some source file to make it happen.
 
-## Radde, build and run docker
+## Build and run docker
 ```
 git clone git@github.com:lekanovic/docker-opengrok.git
 cd docker-opengrok
@@ -32,7 +32,7 @@ sudo docker run -e "JAVA_OPTS=-Xmx6144m" -v /var/opengrok/code/open:/src -v /var
 #Restricted container
 sudo docker run -e "JAVA_OPTS=-Xmx6144m" -v /var/opengrok/code/restricted:/src -v /var/opengrok/index:/reindex -p 9091:8080 lekanovic/opengrok
 ```
-## Radde, push image to docker hub
+## Push image to docker hub
 ```
 sudo docker push lekanovic/opengrok
 ```
